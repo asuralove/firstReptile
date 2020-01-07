@@ -18,8 +18,8 @@ print(type(name))
 class Spider(object):
     def __init__(self):
         self.HTTP_PROXY = {
-            "http": "127.0.0.1:10809",
-            "https": "127.0.0.1:10809",
+            "http": "127.0.0.1:1081",
+            "https": "127.0.0.1:1081",#10809
         }
         self.home_url = 'https://www.instagram.com/'+name+'/'
         self.base_url = "https://www.instagram.com/graphql/query/?query_hash=2c5d4d8b70cad329c4a6ebe3abb6eedd&variables=%7B\"id\"%3A\"{id}\"%2C\"first\"%3A12%2C\"after\"%3A\"{end_cursor}\"%7D"
